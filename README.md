@@ -1,4 +1,6 @@
 # project100
 Exploratory Committee
-front/landing page, polls, blog, forums, chat
-Solicit funding, support, volunteers
+Citizens for Change
+A Political Action Committe (PAC)
+front/landing page, polls, blogs, forums, chat(IRC)
+Solicit funding, gather support, employ volunteers

@@ -1,7 +1,18 @@
 {% extends "homepage/header.html" %}
 
-{% block content %}
-    <p>God Bless our Nation!</p>
-    <p>Absence of proper leadership in our country</p>
-{% include "homepage/includes/htmlsnippet.html" %}
+{% block content %} 
+    {% include "homepage/includes/navbarsnippet.html" %}
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Save Our Nation!</h1>
+        <p class="lead">The absence of competent leadership is destroying our nation!</p>
+        <p class="lead">
+            <input id="mailing_list_email">
+            <a href="#" class="btn btn-lg btn-secondary">Join</a>
+        </p>
+    </main>
+{% endblock %}
+
+{% block footer %}
+    {% include "homepage/includes/footersnippet.html" %}
+    {% include "homepage/includes/jscodesnippet.html" %}
 {% endblock %}
