@@ -1,2 +1,4 @@
 # project100
-Support libraries for a card game in python
+Exploratory Committee
+front/landing page, polls, blog, forums, chat
+Solicit funding, support, volunteers
