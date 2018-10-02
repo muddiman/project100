@@ -11,14 +11,17 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
+/* when cursor is over join button */
+.btn-secondary:hover {
+  color: #fff;
+  background-color: rgb(11, 138, 7);
+}
 
 /*
  * Base structure
@@ -52,19 +55,21 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  color: rgb(17, 201, 17);
 }
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  font-weight: 300;
+  color: #ffffff;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -77,6 +82,7 @@ body {
 }
 
 @media (min-width: 48em) {
+  /* Only for screens 48em and larger */                                                                                     
   .masthead-brand {
     float: left;
   }
@@ -91,16 +97,31 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  background-image: url("{% static 'media/images/TNTflag.jpg' %}"); 
+  background-size: auto;
 }
+.form-inline {
+  margin: auto;
+  padding: 10px;
+  width: 55%;
+}
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
+ #copyright {   font-size: 10px;
+   color: rgba(255, 255, 255, .5);
+}
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+}
+.mastfoot a:hover { 
+  color: rgba(142, 221, 172, 0.5);  
+  font-weight: bold;
 }

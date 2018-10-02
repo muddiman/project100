@@ -1,18 +1,26 @@
 {% extends "homepage/header.html" %}
 
-{% block content %} 
+
+{% block nav_bar %}
     {% include "homepage/includes/navbarsnippet.html" %}
+{% endblock %}
+
+
+{% block content %} 
     <main role="main" class="inner cover">
         <h1 class="cover-heading">Save Our Nation!</h1>
         <p class="lead">The absence of competent leadership is destroying our nation!</p>
-        <p class="lead">
-            <input id="mailing_list_email">
-            <a href="#" class="btn btn-lg btn-secondary">Join</a>
-        </p>
+        <p>Please join our mailing list.</p>
+        <!-- <p class="lead"> -->
+            {% include "homepage/includes/mailinglistform.html" %}
+        <!-- </p> -->
     </main>
 {% endblock %}
 
+
+
 {% block footer %}
     {% include "homepage/includes/footersnippet.html" %}
+    {% include "homepage/includes/copyright.html" %}
     {% include "homepage/includes/jscodesnippet.html" %}
 {% endblock %}

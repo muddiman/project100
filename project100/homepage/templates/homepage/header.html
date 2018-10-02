@@ -3,7 +3,7 @@
 <HEAD>
     <!-- Additional header files to help pass header links needed for other pages -->
     {% block header %}
-    <title>Citizens for Change</title>
+        <title>Citizens for Change</title>
     {% endblock %}
 
     <meta charset="utf-8"/>
@@ -19,21 +19,28 @@
 
 
 <BODY class="text-center">
-    <!-- Section Reserved for Navbar Snippet -->
+    <div style='background: url("{% static 'media/images/2ibis.jpg' %}") no-repeat center'  class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <!-- Section Reserved for Navbar Snippet -->
+        {% block nav_bar %}
+           
+        {% endblock %}
+        
+        <!-- Insertion of a background image   -->
+        <div ></div>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <!-- the webpage -->
+        <!-- the webpage: the main content -->
         {% block content %}
             
         {% endblock %}
-    </div>
 
-    <div>
+        <!-- ================ debugging ======================== 
+            loading a background image from static folder 
+            <img src="{% static 'media/images/TNTfingerprint.jpg' %}"> -->
+
         <!-- additional footer information -->
         {% block footer %}
 
         {% endblock %}
     </div>
-
 </BODY>
 </html> 
