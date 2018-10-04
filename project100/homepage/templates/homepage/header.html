@@ -18,24 +18,17 @@
 </HEAD>
 
 
-<BODY class="text-center">
-    <div style='background: url("{% static 'media/images/2ibis.jpg' %}") no-repeat center'  class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<BODY style='background: url("{% static 'media/images/2ibis.jpg' %}") no-repeat center' class="text-center">
+    <div   class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <!-- Section Reserved for Navbar Snippet -->
         {% block nav_bar %}
            
         {% endblock %}
-        
-        <!-- Insertion of a background image   -->
-        <div ></div>
 
         <!-- the webpage: the main content -->
         {% block content %}
             
         {% endblock %}
-
-        <!-- ================ debugging ======================== 
-            loading a background image from static folder 
-            <img src="{% static 'media/images/TNTfingerprint.jpg' %}"> -->
 
         <!-- additional footer information -->
         {% block footer %}
