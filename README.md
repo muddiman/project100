@@ -10,4 +10,4 @@ Finished Components:
 
 
 TODO:
-    Mailing List, Register, log in, Polls
+    Mailing List, Register, log in, Polls, BLOG, Forums, Chat (IRC),  

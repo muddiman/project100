@@ -26,7 +26,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 
 body {
@@ -74,7 +73,7 @@ body {
   min-width: 160px;
   z-index: 1;
 }
-.dropdown-content a {padding: 6px 8px;}
+.dropdown-content a {padding: 1px 2px;}
 .dropdown:hover .dropdown-content {display: block;}
 
 .nav-masthead .nav-link:hover,
