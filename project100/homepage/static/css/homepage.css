@@ -12,10 +12,9 @@ a:hover {
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+ color: rgb(11, 138, 7);
+ text-shadow: none; /* Prevent inheritance from `body` */
+ border: .15rem solid rgb(11, 138, 7);
 }
 
 
@@ -107,8 +106,7 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
-  background-image: url("{% static 'media/images/TNTflag.jpg' %}"); 
+  padding: 0 1.5rem; 
   background-size: auto;
 }
 p.lead {
@@ -117,19 +115,34 @@ p.lead {
 .form-inline {
   margin: auto;
   padding: 10px;
-  width: 27%;
+  width: 27%; 
 }
-
+#mailinglist-form {
+  width: 35%;
+}
+#registration-form {
+  width: 20%;
+}
+#login-form {
+  width: 25%;
+} 
+#contact-form {
+  width: 25%;
+}
+ 
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
+  color: rgb(11, 138, 7);
+  background: transparent;
 }
 /* when cursor is over join button */
 .btn-secondary:hover {
-  color: #fff;
+  color: white;
   background-color: rgb(11, 138, 7);
+  border: none;
 }
-
+ 
 
 /*
  * Footer

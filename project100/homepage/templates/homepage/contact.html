@@ -1,0 +1,29 @@
+{% extends "homepage/header.html" %}
+
+{% block header %}
+    <title>CONTACT FORM</title>
+{% endblock %}  
+
+{% block nav_bar %}
+    {% include "homepage/includes/navbarsnippet.html" %}
+{% endblock %}
+
+{% block content %}
+<main role="main" class="inner cover">
+    <form class="form-inline" id="contact-form">
+        <label for="Email"><b>Email:</b></label>
+        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="john.doe@email.org" name="Email" id="email">
+        <label for="Subject"><b>Subject:</b></label>
+        <input type="subject" class="form-control mb-2 mr-sm-2" name="subject" id="subject">
+        <label for="text"><b>Message:</b></label>
+        <input type="text" class="form-control mb-2 mr-sm-2" name="message" id="message">
+        <button type="submit" class="btn btn-lg btn-secondary">SEND!</button>
+    </form>
+</main>
+{% endblock %}
+
+{% block footer %}
+    {% include "homepage/includes/footersnippet.html" %}
+    {% include "homepage/includes/copyright.html" %}
+    {% include "homepage/includes/jscodesnippet.html" %}
+{% endblock %}
